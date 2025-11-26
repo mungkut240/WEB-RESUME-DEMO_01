@@ -1,10 +1,6 @@
-// ฟังก์ชันสำหรับปุ่มพิมพ์
-document.addEventListener('DOMContentLoaded', function() {
-    const printButton = document.getElementById('printBtn');
-    
-    if (printButton) {
-        printButton.addEventListener('click', function() {
-            window.print();
-        });
-    }
+// สามารถเพิ่ม Custom JavaScript logic ได้ที่นี่ เช่น
+/*
+document.addEventListener('DOMContentLoaded', () => {
+    // โค้ดสำหรับลูกเล่น
 });
+*/
