@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Template - Professional (Demo)</title>
+    <title>Resume Template - Comfortable Theme</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,236 +13,228 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    
 </head>
-<body class="text-gray-700">
+<body class="text-stone-700 min-h-screen">
 
-    <div class="no-print fixed bottom-6 right-6 z-50 flex gap-2">
-        <button id="printBtn" class="print-btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg flex items-center gap-2 cursor-pointer">
-            <i class="fas fa-print"></i> พิมพ์ / บันทึก PDF
-        </button>
-    </div>
-
-    <div class="page-container max-w-5xl mx-auto my-8 bg-white shadow-xl rounded-lg overflow-hidden">
+    <div class="page-container max-w-5xl mx-auto my-8 bg-white shadow-xl rounded-lg overflow-hidden print:my-0 print:rounded-none border border-stone-200">
         
-        <header class="bg-slate-800 text-white p-8 md:p-12 relative overflow-hidden">
-            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-slate-700 rounded-full opacity-50 blur-3xl"></div>
+        <header class="bg-stone-800 text-white p-8 md:p-12 relative overflow-hidden print:p-8">
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-stone-700 rounded-full opacity-50 blur-3xl print:hidden"></div>
             
             <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                <div class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg bg-gray-300 flex items-center justify-center overflow-hidden shrink-0">
-                   <i class="fas fa-user text-6xl text-gray-500"></i>
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-stone-300 shadow-lg bg-stone-200 flex items-center justify-center overflow-hidden shrink-0">
+                   <i class="fas fa-code text-6xl text-stone-400"></i>
                 </div>
 
                 <div class="text-center md:text-left flex-1">
-                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2 text-blue-400">[ชื่อ-นามสกุล ของคุณ]</h1>
-                    <h2 class="text-xl md:text-2xl font-light text-gray-300 mb-6">วิศวกรระบบคอมพิวเตอร์และอิเล็กทรอนิกส์</h2>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2 text-teal-100">สมคิด พัฒนาการ</h1>
+                    <h2 class="text-xl md:text-2xl font-light text-stone-300 mb-6">Full-Stack Web Developer & E-commerce Specialist</h2>
                     
-                    <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm md:text-base text-gray-300">
-                        <div class="flex items-center gap-2 bg-slate-700 px-3 py-1 rounded-full hover:bg-slate-600 transition-colors cursor-default">
-                            <i class="fas fa-phone-alt text-blue-400"></i>
-                            <span>08X-XXX-XXXX (Demo)</span>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm md:text-base text-stone-300">
+                        <div class="flex items-center gap-2 bg-stone-700 px-3 py-1 rounded-full print:bg-transparent print:p-0 print:text-stone-600">
+                            <i class="fas fa-phone-alt text-teal-400 print:text-teal-700"></i>
+                            <span>099-XXX-7890</span>
                         </div>
-                        <div class="flex items-center gap-2 bg-slate-700 px-3 py-1 rounded-full hover:bg-slate-600 transition-colors cursor-default">
-                            <i class="fas fa-envelope text-blue-400"></i>
-                            <span>email@demo.com</span>
+                        <div class="flex items-center gap-2 bg-stone-700 px-3 py-1 rounded-full print:bg-transparent print:p-0 print:text-stone-600">
+                            <i class="fas fa-envelope text-teal-400 print:text-teal-700"></i>
+                            <span>somkid.dev@mock.co.th</span>
                         </div>
-                        <div class="flex items-center gap-2 bg-slate-700 px-3 py-1 rounded-full hover:bg-slate-600 transition-colors cursor-default">
-                            <i class="fas fa-map-marker-alt text-blue-400"></i>
-                            <span>กรุงเทพมหานคร, ประเทศไทย</span>
+                        <div class="flex items-center gap-2 bg-stone-700 px-3 py-1 rounded-full print:bg-transparent print:p-0 print:text-stone-600">
+                            <i class="fas fa-map-marker-alt text-teal-400 print:text-teal-700"></i>
+                            <span>นนทบุรี, ประเทศไทย</span>
                         </div>
-                        <div class="flex items-center gap-2 bg-slate-700 px-3 py-1 rounded-full hover:bg-slate-600 transition-colors cursor-default">
-                            <i class="fab fa-linkedin text-blue-400"></i>
-                            <span>linkedin.com/in/demo</span>
+                        <div class="flex items-center gap-2 bg-stone-700 px-3 py-1 rounded-full print:bg-transparent print:p-0 print:text-stone-600">
+                            <i class="fab fa-github text-teal-400 print:text-teal-700"></i>
+                            <span>github.com/somkid-mock</span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col md:flex-row print:flex-row">
             
-            <aside class="w-full md:w-1/3 bg-gray-50 p-8 border-r border-gray-100">
+            <aside class="w-full md:w-1/3 print:w-1/3 bg-stone-50 p-8 border-r border-stone-100 print:bg-stone-50">
                 
                 <div class="mb-8">
-                    <h3 class="text-xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-4 uppercase">
-                        <i class="fas fa-user-circle mr-2 text-blue-500"></i> ข้อมูลส่วนตัว
+                    <h3 class="text-xl font-bold text-stone-800 border-b-2 border-teal-600 pb-2 mb-4 uppercase">
+                        <i class="fas fa-user-circle mr-2 text-teal-700"></i> ข้อมูลส่วนตัว
                     </h3>
-                    <p class="text-gray-600 leading-relaxed text-sm">
-                        บุคลากรที่มีความกระตือรือร้นและมีความรู้พื้นฐานแน่นด้าน Networking, C++, Python และ SQL มีประสบการณ์จริงจากการฝึกงานและมีความสามารถในการแก้ไขปัญหาทางเทคนิค มุ่งเน้นการดูแลรักษาระบบอย่างมีประสิทธิภาพ
+                    <p class="text-stone-600 leading-relaxed text-sm text-justify">
+                        นักพัฒนาที่เปี่ยมด้วยประสบการณ์ 5 ปี ในการออกแบบ พัฒนา และดูแลรักษาระบบเว็บแอปพลิเคชันและแพลตฟอร์มอีคอมเมิร์ซแบบครบวงจร มีความเชี่ยวชาญใน React, Node.js และ Firebase มุ่งเน้นการสร้างประสบการณ์ผู้ใช้ที่มีประสิทธิภาพและปรับปรุงประสิทธิภาพของเว็บไซต์อย่างต่อเนื่อง
                     </p>
                 </div>
 
                 <div class="mb-8">
-                    <h3 class="text-xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-4 uppercase">
-                        <i class="fas fa-graduation-cap mr-2 text-blue-500"></i> การศึกษา
+                    <h3 class="text-xl font-bold text-stone-800 border-b-2 border-teal-600 pb-2 mb-4 uppercase">
+                        <i class="fas fa-graduation-cap mr-2 text-teal-700"></i> การศึกษา
                     </h3>
                     <div class="mb-4">
-                        <span class="text-sm text-blue-600 font-semibold bg-blue-50 px-2 py-0.5 rounded">2020 - 2024</span>
-                        <h4 class="text-lg font-bold text-gray-800 mt-2">ปริญญาตรี วิศวกรรมศาสตร์</h4>
-                        <p class="text-gray-600 font-medium">สาขาวิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์</p>
-                        <p class="text-gray-500 text-sm mt-1">มหาวิทยาลัยศิลปากร (ตัวอย่าง)</p>
+                        <span class="text-sm text-teal-800 font-semibold bg-teal-100 px-2 py-0.5 rounded print:bg-transparent print:p-0">2015 - 2019</span>
+                        <h4 class="text-lg font-bold text-stone-800 mt-2">ปริญญาตรี วิทยาศาสตร์</h4>
+                        <p class="text-stone-600 font-medium">สาขาวิทยาการคอมพิวเตอร์</p>
+                        <p class="text-stone-500 text-sm mt-1">สถาบันเทคโนโลยีแห่งเอเชีย (AIT - ตัวอย่าง)</p>
                     </div>
                 </div>
 
                 <div class="mb-8">
-                    <h3 class="text-xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-4 uppercase">
-                        <i class="fas fa-tools mr-2 text-blue-500"></i> ทักษะทางเทคนิค
+                    <h3 class="text-xl font-bold text-stone-800 border-b-2 border-teal-600 pb-2 mb-4 uppercase">
+                        <i class="fas fa-tools mr-2 text-teal-700"></i> ทักษะทางเทคนิค
                     </h3>
                     
                     <div class="space-y-3">
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 font-medium text-sm">C++ / Python / SQL</span>
-                                <span class="text-blue-600 text-xs font-bold">Good</span>
+                                <span class="text-stone-700 font-medium text-sm">React / Node.js / Express</span>
+                                <span class="text-teal-700 text-xs font-bold">Expert</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 font-medium text-sm">HTML / CSS / JS</span>
-                                <span class="text-blue-600 text-xs font-bold">Intermediate</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                            <div class="w-full bg-stone-200 rounded-full h-2 print:border print:border-stone-300">
+                                <div class="bg-teal-600 h-2 rounded-full print:bg-stone-600" style="width: 90%"></div>
                             </div>
                         </div>
 
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 font-medium text-sm">Network / Hardware</span>
-                                <span class="text-blue-600 text-xs font-bold">Advanced</span>
+                                <span class="text-stone-700 font-medium text-sm">JavaScript / TypeScript / SQL</span>
+                                <span class="text-teal-700 text-xs font-bold">Advanced</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                            <div class="w-full bg-stone-200 rounded-full h-2 print:border print:border-stone-300">
+                                <div class="bg-teal-600 h-2 rounded-full print:bg-stone-600" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-stone-700 font-medium text-sm">Cloud (GCP/Firebase) / Docker</span>
+                                <span class="text-teal-700 text-xs font-bold">Intermediate</span>
+                            </div>
+                            <div class="w-full bg-stone-200 rounded-full h-2 print:border print:border-stone-300">
+                                <div class="bg-teal-600 h-2 rounded-full print:bg-stone-600" style="width: 70%"></div>
                             </div>
                         </div>
                         
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 font-medium text-sm">Microsoft Office</span>
-                                <span class="text-blue-600 text-xs font-bold">Expert</span>
+                                <span class="text-stone-700 font-medium text-sm">UI/UX Design (Figma)</span>
+                                <span class="text-teal-700 text-xs font-bold">Good</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                            <div class="w-full bg-stone-200 rounded-full h-2 print:border print:border-stone-300">
+                                <div class="bg-teal-600 h-2 rounded-full print:bg-stone-600" style="width: 65%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-8">
-                    <h3 class="text-xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-4 uppercase">
-                        <i class="fas fa-language mr-2 text-blue-500"></i> ภาษา
+                    <h3 class="text-xl font-bold text-stone-800 border-b-2 border-teal-600 pb-2 mb-4 uppercase">
+                        <i class="fas fa-language mr-2 text-teal-700"></i> ภาษา
                     </h3>
-                    <ul class="space-y-2 text-sm text-gray-700">
+                    <ul class="space-y-2 text-sm text-stone-700">
                         <li class="flex items-center gap-2">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span class="w-2 h-2 bg-teal-600 rounded-full print:bg-stone-800"></span>
                             <span><strong>ภาษาไทย:</strong> เจ้าของภาษา (Native)</span>
                         </li>
                         <li class="flex items-center gap-2">
-                            <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
-                            <span><strong>ภาษาอังกฤษ:</strong> สื่อสารได้ดี (Intermediate)</span>
+                            <span class="w-2 h-2 bg-teal-400 rounded-full print:bg-stone-500"></span>
+                            <span><strong>ภาษาอังกฤษ:</strong> สื่อสารธุรกิจ (Business Fluent)</span>
                         </li>
                     </ul>
                 </div>
 
             </aside>
 
-            <main class="w-full md:w-2/3 p-8">
+            <main class="w-full md:w-2/3 print:w-2/3 p-8">
                 
                 <section>
-                    <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-500 pl-4 mb-6 uppercase">
+                    <h3 class="text-2xl font-bold text-stone-800 border-l-4 border-teal-600 pl-4 mb-6 uppercase">
                         ประสบการณ์การทำงาน
                     </h3>
 
-                    <div class="relative pl-8 pb-8 border-l border-gray-200 last:border-0 last:pb-0 group">
-                        <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-blue-500 rounded-full border-2 border-white shadow"></div>
+                    <div class="relative pl-8 pb-8 border-l border-stone-200 last:border-0 last:pb-0 group">
+                        <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-teal-600 rounded-full border-2 border-white shadow print:bg-stone-800"></div>
                         
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
-                            <h4 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">ที่ปรึกษาด้านการขายและบริการ (Demo)</h4>
-                            <span class="text-sm text-gray-500 font-medium bg-gray-100 px-2 py-1 rounded">ก.ย. 2024 - มี.ค. 2025</span>
+                            <h4 class="text-xl font-bold text-stone-800 group-hover:text-teal-700 transition-colors">Senior Full-Stack Developer</h4>
+                            <span class="text-sm text-stone-500 font-medium bg-stone-100 px-2 py-1 rounded print:bg-transparent print:border print:border-stone-200">ม.ค. 2022 - ปัจจุบัน</span>
                         </div>
-                        <p class="text-blue-600 font-medium mb-3">บริษัท เจมาร์ท โมบายล์ จำกัด (สาขาตัวอย่าง)</p>
+                        <p class="text-teal-700 font-medium mb-3 print:text-stone-700">บริษัท แพลตฟอร์มอีคอมเมิร์ซไทย จำกัด (มหาชน)</p>
                         
-                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-600 leading-relaxed text-sm">
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-stone-600 leading-relaxed text-sm">
                             <li>
-                                <strong class="text-gray-700">การสร้างยอดขาย:</strong> ผลักดันยอดขายอุปกรณ์มือถือและอุปกรณ์เสริมให้เป็นไปตามเป้าหมาย หรือเกินเป้าหมายรายเดือนอย่างสม่ำเสมอ
+                                <strong class="text-stone-700">การพัฒนา Back-end:</strong> ออกแบบและพัฒนา RESTful API ด้วย Node.js และ Express เพื่อรองรับผู้ใช้งานพร้อมกันกว่า 100,000 รายต่อวัน
                             </li>
                             <li>
-                                <strong class="text-gray-700">การให้คำปรึกษาทางเทคนิค:</strong> ให้บริการตรวจสอบเบื้องต้น อัปเดตเฟิร์มแวร์ และแนะนำลูกค้าเกี่ยวกับฟีเจอร์ที่ซับซ้อนได้อย่างเชี่ยวชาญ
+                                <strong class="text-stone-700">การปรับปรุงประสิทธิภาพ:</strong> ปรับโครงสร้างฐานข้อมูล SQL และเพิ่มประสิทธิภาพการ Query ลดเวลาโหลดหน้า (Page Load Time) ลง 40%
                             </li>
                             <li>
-                                <strong class="text-gray-700">ความพึงพอใจของลูกค้า:</strong> เพิ่มความพึงพอใจให้กับลูกค้าผ่านการตั้งค่าผลิตภัณฑ์แบบครบวงจร และสอนการใช้งานอุปกรณ์แบบตัวต่อตัวอย่างละเอียด
+                                <strong class="text-stone-700">การดูแล Front-end:</strong> นำ React และ Next.js มาใช้ในการพัฒนาส่วนหน้า (Frontend) ของเว็บไซต์ ลดบั๊กที่เกิดจาก State Management ได้ถึง 25%
                             </li>
                             <li>
-                                <strong class="text-gray-700">ความรู้ผลิตภัณฑ์:</strong> ติดตามข่าวสารการเปิดตัวสินค้าใหม่และการอัปเดตซอฟต์แวร์ เพื่อให้ข้อมูลที่ถูกต้องและแม่นยำแก่ลูกค้า
+                                <strong class="text-stone-700">DevOps:</strong> ดูแลการ Deploy ระบบผ่าน Docker และ Google Cloud Platform (GCP) เพื่อให้ระบบมีความเสถียรและ Scalable
                             </li>
                         </ul>
                     </div>
 
-                    <div class="relative pl-8 pb-8 border-l border-gray-200 last:border-0 last:pb-0 group mt-8">
-                        <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-blue-400 rounded-full border-2 border-white shadow"></div>
+                    <div class="relative pl-8 pb-8 border-l border-stone-200 last:border-0 last:pb-0 group mt-8">
+                        <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-teal-400 rounded-full border-2 border-white shadow print:bg-stone-600"></div>
                         
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
-                            <h4 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">นักศึกษาฝึกงาน วิศวกรเครือข่าย (Demo)</h4>
-                            <span class="text-sm text-gray-500 font-medium bg-gray-100 px-2 py-1 rounded">เม.ย. 2023 - มิ.ย. 2023</span>
+                            <h4 class="text-xl font-bold text-stone-800 group-hover:text-teal-700 transition-colors">Junior Web Developer</h4>
+                            <span class="text-sm text-stone-500 font-medium bg-stone-100 px-2 py-1 rounded print:bg-transparent print:border print:border-stone-200">มิ.ย. 2019 - ธ.ค. 2021</span>
                         </div>
-                        <p class="text-blue-600 font-medium mb-3">บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน)</p>
+                        <p class="text-teal-700 font-medium mb-3 print:text-stone-700">บริษัท ซอฟต์แวร์โซลูชั่น จำกัด</p>
                         
-                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-600 leading-relaxed text-sm">
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-stone-600 leading-relaxed text-sm">
                             <li>
-                                <strong class="text-gray-700">การติดตั้งและบำรุงรักษา:</strong> เรียนรู้วิธีการติดตั้งและดูแลรักษาอุปกรณ์เครือข่ายจากวิศวกรอาวุโส ปฏิบัติงานจริงในสถานที่
+                                <strong class="text-stone-700">การพัฒนาเว็บไซต์:</strong> พัฒนาเว็บไซต์องค์กร 5 แห่งโดยใช้ HTML5, CSS3 และ jQuery ตามดีไซน์ที่กำหนด
                             </li>
                             <li>
-                                <strong class="text-gray-700">การจัดการสายสัญญาณ:</strong> ช่วยเหลือช่างเทคนิคในการเดินสายและจัดระเบียบสายในตู้ Rack Cabinet ให้เป็นระเบียบและได้มาตรฐาน
+                                <strong class="text-stone-700">การฝึกอบรม:</strong> จัดทำเอกสารและฝึกอบรมทีมงานในการใช้เครื่องมือจัดการเนื้อหา (CMS) เช่น WordPress และ Drupal
                             </li>
                             <li>
-                                <strong class="text-gray-700">การตรวจสอบระบบ:</strong> มีส่วนร่วมในการตรวจสอบสภาพอุปกรณ์ภายนอก บันทึกข้อมูลการทำงาน และรายงานความผิดปกติให้หัวหน้างานทราบ
-                            </li>
-                            <li>
-                                <strong class="text-gray-700">การพัฒนาทักษะ:</strong> พัฒนาความเข้าใจในหลักการและแนวปฏิบัติของการติดตั้งเครือข่าย รวมถึงทักษะการแก้ไขปัญหาหน้างาน
+                                <strong class="text-stone-700">การบำรุงรักษา:</strong> ดูแลและแก้ไขบั๊กบนเว็บไซต์ลูกค้าทั้งหมดให้ทำงานได้อย่างถูกต้องตามมาตรฐาน W3C
                             </li>
                         </ul>
                     </div>
 
                 </section>
 
-                <hr class="border-gray-200 my-8">
+                <hr class="border-stone-200 my-8">
 
                 <section>
-                    <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-500 pl-4 mb-6 uppercase">
-                        โปรเจกต์ที่น่าสนใจ (Demo)
+                    <h3 class="text-2xl font-bold text-stone-800 border-l-4 border-teal-600 pl-4 mb-6 uppercase">
+                        โปรเจกต์ส่วนตัวที่น่าสนใจ
                     </h3>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200 hover:shadow-md transition-shadow print:border-stone-300">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="font-bold text-gray-800">Smart Home IoT System</h4>
-                                <i class="fas fa-microchip text-blue-400"></i>
+                                <h4 class="font-bold text-stone-800">Personal Finance Tracker (Mock)</h4>
+                                <i class="fas fa-chart-line text-teal-600 print:text-stone-600"></i>
                             </div>
-                            <p class="text-xs text-gray-500 mb-2">C++, Arduino, WiFi Module</p>
-                            <p class="text-sm text-gray-600">
-                                พัฒนาระบบควบคุมไฟและอุณหภูมิภายในบ้านผ่านแอปพลิเคชัน โดยใช้ไมโครคอนโทรลเลอร์และการสื่อสารไร้สาย
+                            <p class="text-xs text-stone-500 mb-2">React, Firebase (Firestore), Redux</p>
+                            <p class="text-sm text-stone-600">
+                                เว็บแอปพลิเคชันสำหรับติดตามรายรับ-รายจ่ายส่วนบุคคลแบบเรียลไทม์ ใช้ Firestore เป็นฐานข้อมูล และแสดงผลด้วย Chart.js
                             </p>
                         </div>
 
-                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200 hover:shadow-md transition-shadow print:border-stone-300">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="font-bold text-gray-800">Network Topology Design</h4>
-                                <i class="fas fa-network-wired text-blue-400"></i>
+                                <h4 class="font-bold text-stone-800">Local Food Blog Platform</h4>
+                                <i class="fas fa-utensils text-teal-600 print:text-stone-600"></i>
                             </div>
-                            <p class="text-xs text-gray-500 mb-2">Cisco Packet Tracer</p>
-                            <p class="text-sm text-gray-600">
-                                ออกแบบและจำลองโครงสร้างเครือข่ายสำหรับองค์กรขนาดกลาง รวมถึงการตั้งค่า VLAN และ Security Policy
+                            <p class="text-xs text-stone-500 mb-2">Wordpress (Custom Theme), PHP, MySQL</p>
+                            <p class="text-sm text-stone-600">
+                                สร้างธีม Wordpress ที่ปรับแต่งได้เองทั้งหมดสำหรับบล็อกอาหารท้องถิ่น เน้นความเร็วในการโหลดและการรองรับ SEO
                             </p>
                         </div>
                     </div>
                 </section>
 
                 <div class="mt-12 text-center">
-                    <p class="text-gray-400 text-sm italic">
+                    <p class="text-stone-400 text-sm italic">
                         บุคคลอ้างอิง: พร้อมให้ข้อมูลเมื่อมีการร้องขอ (References available upon request)
                     </p>
                 </div>
@@ -250,12 +242,12 @@
             </main>
         </div>
         
-        <footer class="bg-slate-800 text-gray-400 text-center py-4 text-xs">
-            <p>&copy; 2025 Designed by [ชื่อของคุณ]. All rights reserved.</p>
+        <footer class="bg-stone-800 text-stone-400 text-center py-4 text-xs print:hidden">
+            <p>&copy; 2025 Designed by สมคิด พัฒนาการ (Mock).</p>
         </footer>
 
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
